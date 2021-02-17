@@ -1,0 +1,12 @@
+<div class="container" *ngIf="posts">
+    <ul class="post-list" *ngFor="let post of posts">
+        <li class="post-item">
+            <p><strong>{{post.title}}</strong></p>
+            <p>{{post.content}}</p>
+            <div class="btn-div">
+                <button mat-raised-button color='warn'>Läs vidare</button>
+            </div>
+        </li>
+    </ul>
+</div>
+

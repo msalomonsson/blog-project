@@ -5,7 +5,7 @@
     .hero{
         min-height: 600px;
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .left-side{
             // background-color: lightcoral;
             min-width: 50%;
@@ -22,7 +22,8 @@
                     padding-bottom: .7rem;
                     // line-height: 5rem;
                     color: #ff5722;
-                    animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: focus-in-expand-fwd 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    line-height: 4rem;
 
                     @keyframes focus-in-expand-fwd {
                         0% {
@@ -46,7 +47,7 @@
 
                     .orange{
                         color: #ff5722;
-                        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
                         @keyframes focus-in-expand {
                             0% {
@@ -83,4 +84,60 @@
         }
     }
 
+}
+
+.container-bot{
+    background-color: white;
+    min-height: 700px;
+    border-radius: 20px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    @keyframes scale-up-center {
+        0% {
+          transform: scale(0.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+    }
+
+
+    .container-bot-content{
+        padding: 2rem 5rem;
+        line-height: 2rem;
+        font-weight: bold;
+
+        .title{
+            font-size: 3rem;
+            padding: 1rem 0rem;
+        }
+
+        .bread{
+            letter-spacing: 2px;
+        }
+
+        .author{
+            padding: 1rem 0;
+            letter-spacing: 5px;
+            color: #ff5722;
+        }
+
+        br{
+            display: block;
+            content: '';
+            margin: 20px 0;
+        }
+    
+    }
+}
+
+.btn-div{
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+        margin-bottom: 2rem;
+    }
 }

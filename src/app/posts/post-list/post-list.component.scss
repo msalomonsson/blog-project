@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    .post-list{
+        margin: 2rem 0;
+        padding: 0;
+    
+        .post-item{
+            width: 15rem;
+            min-height: 15rem;
+            background-color: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-right: 2rem;
+            display: flex;
+            flex-direction: column;
+
+
+            .btn-div{
+                margin-top: auto;
+                align-self: flex-end;
+            }
+        }
+    }
+
+}

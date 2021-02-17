@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    console.log(this.auth.user)
   }
 
   onLogout(){
@@ -35,7 +35,5 @@ export class HeaderComponent implements OnInit {
   }
 
   
-    
-    
 
 }

@@ -3,8 +3,9 @@
         <div class="left-nav">
             <a mat-raised-button color='warn' class="homeBtn" routerLink="/">Home</a>
             <div *ngIf="(user | async)">
-                <a mat-raised-button color='warn' routerLink="/edit">Edit</a>
+                <a mat-raised-button color='warn' class="editBtn" routerLink="/edit">Edit</a>
             </div>
+            <a mat-raised-button color='warn' routerLink="/posts" >Posts</a>
         </div>
         <div *ngIf="(user | async)">
             <button mat-raised-button color='warn' (click)='onLogout()'>Log out</button>

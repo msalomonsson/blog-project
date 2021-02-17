@@ -19,6 +19,10 @@ import {
 import { MatInputModule } from '@angular/material/input';
 import { RegisterComponent } from './login/register/register.component';
 import { EditComponent } from './edit/edit.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import { EditComponent } from './edit/edit.component';
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
-    EditComponent
+    EditComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,9 @@ import { EditComponent } from './edit/edit.component';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule
 
     
   ],
