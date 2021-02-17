@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "blog-902a5": {
+      "hosting": {
+        "blog-project": [
+          "blog-902a5"
+        ]
+      }
+    }
+  }
+}

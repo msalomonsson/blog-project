@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .form {
+    width: 20rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  .form-control {
+    display: block;
+  }
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+  }

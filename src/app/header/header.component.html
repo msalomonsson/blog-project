@@ -1,0 +1,16 @@
+<div class="nav-bar">
+    <mat-toolbar class="navbar">
+        <div class="left-nav">
+            <a mat-raised-button color='warn' class="homeBtn" routerLink="/">Home</a>
+            <div *ngIf="(user | async)">
+                <a mat-raised-button color='warn' routerLink="/edit">Edit</a>
+            </div>
+        </div>
+        <div *ngIf="(user | async)">
+            <button mat-raised-button color='warn' (click)='onLogout()'>Log out</button>
+        </div>
+        <div *ngIf="!(user | async)">
+            <a mat-raised-button color='warn' routerLink="/login">Log in</a>
+        </div>
+    </mat-toolbar>
+</div>

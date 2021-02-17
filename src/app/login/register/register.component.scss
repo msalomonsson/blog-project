@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+
+
+    .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .mat-error{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: black;
+    }
+}

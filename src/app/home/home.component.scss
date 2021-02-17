@@ -1,0 +1,86 @@
+.container{
+    // background-color: lightgray;
+    height: 100%;
+
+    .hero{
+        min-height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        .left-side{
+            // background-color: lightcoral;
+            min-width: 50%;
+            height: inherit;
+
+            .left-side-content{
+                padding-left: 1rem;
+                padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                
+                h1{
+                    font-size:3.5rem;
+                    padding-bottom: .7rem;
+                    // line-height: 5rem;
+                    color: #ff5722;
+                    animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                    @keyframes focus-in-expand-fwd {
+                        0% {
+                          letter-spacing: -0.5em;
+                          transform: translateZ(-800px);
+                          filter: blur(12px);
+                          opacity: 0;
+                        }
+                        100% {
+                          transform: translateZ(0);
+                          filter: blur(0);
+                          opacity: 1;
+                        }
+                    }
+                        
+                }
+
+                h4{
+                    font-size:2vw;
+                    color: white;
+
+                    .orange{
+                        color: #ff5722;
+                        animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                        @keyframes focus-in-expand {
+                            0% {
+                              letter-spacing: -0.5em;
+                              filter: blur(12px);
+                              opacity: 0;
+                            }
+                            100% {
+                              filter: blur(0px);
+                              opacity: 1;
+                            }
+                          }
+                    }
+                }
+
+                h6{
+                    font-size: 1vw;
+                    letter-spacing: 2px;
+                    padding-bottom: .7rem;
+                    color: white;
+                }
+            }
+        }
+    
+        .right-side{
+            min-width: 50%;
+            margin-top: 2rem;
+            // min-height: inherit;
+            background-image: url(/assets/pics/hero-pic.svg);
+            background-position: top;
+            background-repeat: no-repeat; 
+            background-size: contain;
+
+        }
+    }
+
+}
