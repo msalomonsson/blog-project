@@ -22,6 +22,8 @@ import { EditComponent } from './edit/edit.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { PostDetailComponent } from './posts/post-detail/post-detail.component';
+
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     LoginComponent,
     RegisterComponent,
     EditComponent,
-    PostListComponent
+    PostListComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     ReactiveFormsModule,
     MatInputModule,
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    
 
     
   ],

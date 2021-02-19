@@ -1,3 +1,4 @@
+import { PostDetailComponent } from './posts/post-detail/post-detail.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { EditComponent } from './edit/edit.component';
 import { RegisterComponent } from './login/register/register.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
-  { path: 'posts',component:PostListComponent}
+  { path: 'posts',component:PostListComponent},
+  { path: 'posts/:id', component:PostDetailComponent}
 
 ];
 

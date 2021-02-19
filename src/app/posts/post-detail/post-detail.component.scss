@@ -1,0 +1,103 @@
+.container{
+    background-color: white;
+    min-height: 700px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    animation: scale-up-ver-top .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    @keyframes scale-up-ver-top {
+        0% {
+          transform: scale(0.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+    }
+
+    .container-content{
+        padding: 2rem 5rem;
+        line-height: 2rem;
+        font-weight: bold;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+
+            i{
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+        }
+
+        .title{
+            font-size: 3rem;
+            padding: 1rem 0rem;
+            line-height: 3rem;
+        }
+
+        .secondTitle{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            letter-spacing: 2px;
+        }
+
+        .bread{
+            letter-spacing: 2px;
+        }
+
+        .author{
+            padding: 1rem 0;
+            letter-spacing: 5px;
+            color: #ff5722;
+        }
+
+        br{
+            display: block;
+            content: '';
+            margin: 20px 0;
+        }
+
+        .right-btn{
+            display: flex;
+            align-items: center;
+            
+            i{
+                margin-left: 1rem;
+            }
+
+        }
+
+    
+    }
+
+    .editDiv{
+        background-color: white;
+        max-width: 50rem;
+        min-height: 900px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding:2rem;
+        border-radius: 20px;
+        margin-top: 2rem;
+
+        .form-footer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .close-btn-div{
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+            
+            i{
+                cursor: pointer;
+            }
+        }
+    }
+}

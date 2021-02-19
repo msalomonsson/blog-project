@@ -1,17 +1,15 @@
 <div class="nav-bar">
     <mat-toolbar class="navbar">
         <div class="left-nav">
-            <a mat-raised-button color='warn' class="homeBtn" routerLink="/">Home</a>
-            <div *ngIf="(user | async)">
-                <a mat-raised-button color='warn' class="editBtn" routerLink="/edit">Edit</a>
-            </div>
-            <a mat-raised-button color='warn' routerLink="/posts" >Posts</a>
+            <a mat-raised-button color='warn' class="homeBtn" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Hem</a>
+            <a mat-raised-button color='warn' class="postsBtn"  routerLink="/posts" routerLinkActive="active">Inlägg</a>
         </div>
         <div *ngIf="(user | async)">
-            <button mat-raised-button color='warn' (click)='onLogout()'>Log out</button>
+            <a mat-raised-button color='warn' class="editBtn" routerLink="/edit" routerLinkActive="active" >Skapa</a>
+            <button mat-raised-button color='warn' (click)='onLogout()'>Logga ut</button>
         </div>
         <div *ngIf="!(user | async)">
-            <a mat-raised-button color='warn' routerLink="/login">Log in</a>
+            <a mat-raised-button color='warn' routerLink="/login" routerLinkActive="active">Logga in</a>
         </div>
     </mat-toolbar>
 </div>

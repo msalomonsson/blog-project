@@ -1,1 +1,25 @@
-<p>edit works!</p>
+<form class="form" [formGroup]="postForm">
+    <mat-form-field color="accent" class="form-control">
+        <mat-label>Lägg till titel</mat-label>
+        <input matInput formControlName="title" type="text" name="title" />
+    </mat-form-field>
+    <mat-form-field color="accent" class="form-control">
+      <mat-label>Lägg till beskrivning</mat-label>
+      <input matInput formControlName="description" type="text" name="description" />
+    </mat-form-field>
+    <mat-form-field class="form-control">
+      <mat-label>Lägg till underrubrik</mat-label>
+      <input matInput name="secondTitle" placeholder="secondTitle"  formControlName="secondTitle">
+    </mat-form-field>
+    <mat-form-field class="form-control">
+        <mat-label>Lägg till text</mat-label>
+        <textarea matInput name="content" placeholder="Content"  formControlName="content" cols="30" rows="40"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form-control">
+      <mat-label>Lägg till författare</mat-label>
+      <input matInput formControlName="author" type="text" />
+    </mat-form-field>
+    <div class="form-footer">
+      <button mat-raised-button color='warn' type="submit" (click)=onSubmit()>Post</button>
+    </div>
+</form>

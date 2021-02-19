@@ -1,21 +1,26 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
     .post-list{
         margin: 2rem 0;
         padding: 0;
     
         .post-item{
             width: 15rem;
-            min-height: 15rem;
+            min-height: 12rem;
             background-color: white;
             border-radius: 20px;
             padding: 2rem;
-            margin-right: 2rem;
+            // margin-right: 2rem;
             display: flex;
             flex-direction: column;
+            margin-right: 1rem;
 
+
+            p{
+                letter-spacing: 2px;
+            }
 
             .btn-div{
                 margin-top: auto;

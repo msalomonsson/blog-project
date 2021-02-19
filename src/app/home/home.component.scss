@@ -6,6 +6,7 @@
         min-height: 600px;
         display: flex;
         // flex-wrap: wrap;
+        margin-bottom: 1rem;
         .left-side{
             // background-color: lightcoral;
             min-width: 50%;
@@ -42,8 +43,8 @@
                 }
 
                 h4{
-                    font-size:2vw;
-                    color: white;
+                    font-size:2rem;
+                   color: black;
 
                     .orange{
                         color: #ff5722;
@@ -64,10 +65,10 @@
                 }
 
                 h6{
-                    font-size: 1vw;
+                    font-size: 1.2rem;
                     letter-spacing: 2px;
                     padding-bottom: .7rem;
-                    color: white;
+                   color: black;
                 }
             }
         }
@@ -90,9 +91,12 @@
     background-color: white;
     min-height: 700px;
     border-radius: 20px;
-    margin-top: 5rem;
+    margin-top: 0rem;
     margin-bottom: 5rem;
     animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    max-width: 1200px;
+    margin: 2rem auto;
+    
 
     @keyframes scale-up-center {
         0% {
@@ -112,6 +116,15 @@
         .title{
             font-size: 3rem;
             padding: 1rem 0rem;
+            line-height: 3rem;
+        }
+
+        .secondTitle{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+            letter-spacing: 2px;
         }
 
         .bread{
@@ -139,5 +152,24 @@
 
     button{
         margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 637px) {
+    .container{
+        .hero{
+            flex-wrap: wrap;
+        }
+    }
+
+    .container-bot{
+        margin-bottom: 2rem;
+        .container-bot-content{
+            padding: .5rem;
+        }
+    }
+
+    .btn-div{
+        margin-right: .5rem;
     }
 }

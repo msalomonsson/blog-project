@@ -2,9 +2,12 @@
     <ul class="post-list" *ngFor="let post of posts">
         <li class="post-item">
             <p><strong>{{post.title}}</strong></p>
-            <p>{{post.content}}</p>
+            <p>{{post.description}}</p>
+            <!-- <p>{{post.id}}</p> -->
+            <p>{{post.published}}</p>
+            <!-- <button mat-raised-button color='warn'>Edit</button> -->
             <div class="btn-div">
-                <button mat-raised-button color='warn'>Läs vidare</button>
+                <button mat-raised-button color='warn' routerLink="{{post.id}}">Läs vidare</button>
             </div>
         </li>
     </ul>

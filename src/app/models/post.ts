@@ -3,6 +3,9 @@ export class Post {
     author!: string
     authorId!: string
     content!: string
+    description!: string
     image!: string
-    published!: Date
+    published!: number
+    id!: string
+    secondTitle!: string
 }

@@ -5,12 +5,18 @@
         justify-content: space-between;
     }
     .navbar{
-        background-color: black;
+        background-color: #EAEDED;
     }
 
-    .homeBtn,.editBtn {
+    .active{
+        background-color: #DD2C00;
+        
+    }
+
+    .homeBtn,.editBtn,.postsBtn {
         margin-right: 1rem;
     }
+
 
     .left-nav{
         display: flex;

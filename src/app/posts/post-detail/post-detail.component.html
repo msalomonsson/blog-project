@@ -1,0 +1,45 @@
+<div class="container" *ngIf="post">
+    <div  *ngIf="!editeState" class="container-content">
+        <div class="top">
+            <p class="date">{{post.published}}</p>
+            <div class="right-btn">
+                <i *ngIf="(user | async)" (click)="editPost()" class="far fa-edit"></i>
+                <i class="far fa-times-circle" (click)="goBack()"></i>
+            </div>
+        </div>
+        <h3 class="title">{{post.title}}</h3>
+        <h5 class="secondTitle">{{post.secondTitle}}</h5>
+        <p class="bread">
+            {{post.content}}
+        </p>
+        <p class="author">{{post.author}} <span>{{post.published}}</span></p>
+    </div>
+
+    <div class="editDiv" *ngIf="editeState">
+        <div class="close-btn-div">
+            <h1>Redigera Inlägg</h1>
+            <i class="far fa-times-circle" (click)="closeEdit()"></i>
+        </div>
+        <mat-form-field>
+            <input matInput placeholder="Lägg till titel" [(ngModel)]="post.title" name="title">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Lägg till beskrivning" [(ngModel)]="post.description" name="description">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Lägg till underrubrik" [(ngModel)]="post.secondTitle" name="secondTitle">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <textarea matInput placeholder="Lägg till text" [(ngModel)]="post.content" name="content" cols="30" rows="40"></textarea>
+        </mat-form-field>
+        <div class="form-footer">
+            <button mat-raised-button color='warn' type="submit" (click)=updatePost()>Uppdatera Inlägg</button>
+            <button mat-raised-button color='warn' type="submit" (click)=deletePost()>Radera Inlägg</button>
+          </div>
+        <br>
+        </div>
+    
+</div>
