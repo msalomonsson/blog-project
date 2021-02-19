@@ -8,7 +8,7 @@
             </div>
         </div>
         <h3 class="title">{{post.title}}</h3>
-        <h5 class="secondTitle">{{post.secondTitle}}</h5>
+        <h5 *ngIf="post.secondTitle" class="secondTitle">{{post.secondTitle}}</h5>
         <p class="bread">
             {{post.content}}
         </p>

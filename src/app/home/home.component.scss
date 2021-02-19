@@ -7,16 +7,20 @@
         display: flex;
         // flex-wrap: wrap;
         margin-bottom: 1rem;
+        
+
         .left-side{
             // background-color: lightcoral;
             min-width: 50%;
             height: inherit;
+            
 
             .left-side-content{
                 padding-left: 1rem;
                 padding-top: 2rem;
                 display: flex;
                 flex-direction: column;
+                
                 
                 h1{
                     font-size:3.5rem;
@@ -45,6 +49,7 @@
                 h4{
                     font-size:2rem;
                    color: black;
+                   
 
                     .orange{
                         color: #ff5722;
@@ -129,6 +134,9 @@
 
         .bread{
             letter-spacing: 2px;
+            white-space: pre-wrap;
+            font-weight: normal;
+            line-height: 1.4rem;
         }
 
         .author{
