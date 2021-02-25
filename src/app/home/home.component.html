@@ -16,7 +16,7 @@
 <div class="container-bot">
     <div class="container-bot-content" *ngFor="let post of posts | slice:0:1">
         <p class="date">{{post.published}}</p>
-        <h3 class="title">{{post.title}}</h3>
+        <h3 class="title">{{post.title | titlecase}}</h3>
         <h5 *ngIf="post.secondTitle" class="secondTitle">{{post.secondTitle}}</h5>
         <p class="bread">
             {{post.content}}

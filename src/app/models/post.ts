@@ -5,7 +5,7 @@ export class Post {
     content!: string
     description!: string
     image!: string
-    published!: number
+    published!: string
     id!: string
     secondTitle!: string
 }

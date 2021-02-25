@@ -22,7 +22,7 @@ export class PostService {
       return changes.map(a => {
         const data = a.payload.doc.data() as Post;
         data.id = a.payload.doc.id;
-        return data;
+        return data
       })
     }))
   }

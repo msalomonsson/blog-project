@@ -8,6 +8,7 @@ import {
   Validators,
 } from '@angular/forms' 
 import { Router } from '@angular/router';
+import * as moment from 'moment';
 
 
 @Component({
@@ -22,11 +23,17 @@ export class EditComponent implements OnInit {
     authorId: '',
     content: '',
     image: '',
-    published: Date.now(),
+    published: '',
     id: '',
     description: '',
     secondTitle: ''
   }
+
+  options = {
+    year: "numeric",
+    month: "2-digit",
+    day: "numeric"
+  };
 
   postForm!: FormGroup;
 
@@ -44,7 +51,7 @@ export class EditComponent implements OnInit {
       authorId: (''),
       content: new FormControl('',Validators.required),
       image: (''),
-      published: new Date(Date.now()).toLocaleString().split(',')[0],
+      published: new Date(Date.now()).toLocaleString("sv-SE",this.options),
       id: (''),
       description: new FormControl('',Validators.required),
       secondTitle: new FormControl('')

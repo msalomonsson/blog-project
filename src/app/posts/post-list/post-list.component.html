@@ -4,7 +4,7 @@
             <p><strong>{{post.title}}</strong></p>
             <p>{{post.description}}</p>
             <!-- <p>{{post.id}}</p> -->
-            <p>{{post.published}}</p>
+            <p>{{post.published | titlecase}}</p>
             <!-- <button mat-raised-button color='warn'>Edit</button> -->
             <div class="btn-div">
                 <button mat-raised-button color='warn' routerLink="{{post.id}}">Läs vidare</button>

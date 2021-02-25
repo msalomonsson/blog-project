@@ -50,9 +50,7 @@ import { PostDetailComponent } from './posts/post-detail/post-detail.component';
     MatInputModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
-    
 
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
