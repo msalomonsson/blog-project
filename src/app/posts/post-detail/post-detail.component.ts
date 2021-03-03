@@ -35,10 +35,6 @@ export class PostDetailComponent implements OnInit {
     this.postService.getPostData(this.id!).subscribe(post => (this.post = post))
   }
 
-  // getPost() {
-  //   return this.postService.getPostData(this.id!).subscribe(post => (this.post = post))
-  // }
-
   editPost(){
     this.editeState = true;
   }
